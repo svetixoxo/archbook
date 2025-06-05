@@ -1,0 +1,12 @@
+[Unit]
+Description=Load brcmfmac module before Network Manager
+Before=NetworkManager.service
+After=systemd-modules-load.service
+
+[Service]
+Type=oneshot
+ExecStart=/sbin/modprobe brcmfmac
+RemainAfterExit=true
+
+[Install]
+WantedBy=NetworkManager.service
