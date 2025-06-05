@@ -19,5 +19,6 @@
 - Speichern und beenden: `:wq`
 - Beenden: `:q` oder `q!`
 - Änderung widerrufen: `u`
+- Aktive Zeile löschen: `dd`
 - Suchen: `/` (nächster Treffer mit `N`)
 - Alles markieren: `ggVG`
