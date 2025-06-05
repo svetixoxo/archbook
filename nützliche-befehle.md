@@ -12,7 +12,6 @@
 - Editor öffnen: `Alt` + `Q`
 - Fenster wechseln: `Alt` + `Pfeiltaste`
 - Fenster schließen: `Alt` + `C`
-- Fensterhöhe maximieren: `Alt` + `V`
 - Dolphin öffnen: `Alt` + `E`
 - Wofi öffnen: `CMD` + `D`
 
