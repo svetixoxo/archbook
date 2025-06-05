@@ -18,7 +18,7 @@
   - **Audio:** `pamixer`, `pavucontrol`, `pipewire-pulse`
   - **Sonstiges:** `brightnessctl`, `broadcom-wl`, `xdg-desktop-portal-hyprland`
 - **Komponenten:** `dolphin`, `grub`, `hyprland`, `sddm`, `sway`, `thunar`, `vim`, `waybar`, `wofi`
-- **Apps:** `chromium`, `firefox`, `kitty`, `thunderbolt`
+- **Apps:** `discord`, `firefox`, `kitty`, `thunderbolt`
 - **Tools:** `grim`, `htop`, `inxi`, `openssh`, `wl-clipboard`
 - **Spielereien:** `asciiquarium`, `cowsay`, `sl`
 
