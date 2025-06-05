@@ -7,3 +7,9 @@
 - Paket mit Abhängigkeiten deinstallieren: `pacman -Rs PAKET`
 - Installierte Pakete anzeigen: `pacman -Qe`
 - Installierte Abhängigkeiten anzeigen: `pacman -Qd`
+
+## VIM
+- Speichern und beenden: `:wq`
+- Beenden: `:q` oder `q!`
+- Suchen: `/` (nächster Treffer mit `N`)
+- Alles markieren: `ggVG`
