@@ -2,7 +2,8 @@
 - **VM:** 2025-06-01
 - **Bare Metal**: seit 2025-06-02
 
-## MacBookPro10,1 (Retina, 15″, Anfang 2013)
+## Hardware
+**MacBookPro10,1** (Retina, 15″, Anfang 2013)
 - **CPU:** Intel Core i7-3740QM @ 2.70 GHz (4C/8T)
 - **RAM:** 16 GB 1600 MHz DDR3L
 - **iGPU:** Intel HD Graphics 4000
@@ -11,7 +12,7 @@
 - **Ethernet:** Broadcom NetXtreme BCM57786 Gigabit
 - **WLAN:** Broadcom BCM43602 802.11ac
 
-## Pakete
+## Software
 - **Treiber**
   - **Grafik:** `dkms`, `nwg-displays`, `opencl-nvidia-470xx`, `xf86-video-nouveau`
   - **Audio:** `pamixer`, `pavucontrol`, `pipewire-pulse`
