@@ -1,0 +1,11 @@
+[Unit]
+Description=gmux_backlight control aktivieren
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/setpci -v -H1 -s 00:00.00 BRIDGE_CONTROL=0
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
