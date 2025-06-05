@@ -1,4 +1,5 @@
 # ArchBook
+Start: 2025-06-01 (VM), 2025-06-02 (bare-metal)
 
 ## MacBookPro10,1 (Retina, 15″, Anfang 2013)
 - CPU: Intel Core i7-3740QM @ 2.70 GHz (4C/8T)
