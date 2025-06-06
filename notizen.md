@@ -120,6 +120,9 @@ reboot
 
 
 
+# Hyprland-Setup
+Updates installieren: `sudo pacmam -Syu`
+
 
 
 ## Installieren und Einrichten
@@ -141,6 +144,8 @@ reboot
 modprobe -r wl
 modprobe brcmfmac
 ```
+- `sudo systemctl start NetworkManager`
+- `sudo systemctl enable NetworkManager`
 - `nmcli device wifi list`
 - `nmcli device wifi connect "SSID" --ask` bzw. `nmcli device wifi connect "SSID" bssid B:S:S:I:D --ask`
 
