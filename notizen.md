@@ -121,7 +121,19 @@ reboot
 
 
 # Hyprland-Setup
-Updates installieren: `sudo pacmam -Syu`
+`su - chanelxoxo`
+- Updates installieren: `sudo pacmam -Syu`
+- AUR Helper installieren (yay)
+```
+sudo pacman -S git
+cd
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+```
+- Hyprland, Wayland und Wofi installieren: `sudo pacman -S hyprland waybar wofi xdg-desktop-portal-hyprland polkit-kde-agent qt5-wayland qt6-wayland` (pipewire-jack für wayland)
+- Weitere Pakete installieren: `sudo pacman -S kitty firefox thunar grim slurp wl-clipboard pipewire pipewire-pulse wireplumber`
+
 
 
 
