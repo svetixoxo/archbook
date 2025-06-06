@@ -52,9 +52,75 @@ mount /dev/sda3 /mnt
 mkdir /mnt/boot
 mount /dev/sda1 /mnt/boot
 ```
-
 ## Basis-Pakete installieren
 ```pacstrap /mnt base base-devel linux linux-firmware vim nano networkmanager grub efibootmgr```
+
+## System konfigurieren
+- fstab generieren: `genfstab -U /mnt >> /mnt/etc/fstab`
+- in das neue System wechseln: `arch-chroot /mnt`
+- Zeitzone setzen
+```
+ln -sf /usr/share/zoneinfo/Europe/Berlin /etc/localtime
+hwclock --systohc
+```
+- Locale konfigurieren
+```
+vim /etc/locale.gen
+# auskommentieren: de_DE.UTF-8 UTF-8 und en_US.UTF-8 UTF-8
+
+locale-gen # Locales generieren
+
+echo "LANG=de_DE.UTF-8" > /etc/locale.conf
+echo "KEYMAP=de-latin1" > /etc/vconsole.conf
+```
+
+- Hostname setzen
+```
+echo "archbook" > /etc/hostname
+
+# /etc/hosts bearbeiten
+vim /etc/hosts
+# 127.0.0.1    localhost
+# ::1          localhost
+# 127.0.1.1    archbook.local archbook
+```
+
+## GRUB-Bootloader installieren
+```
+# GRUB für UEFI installieren
+grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB --recheck
+
+# GRUB-Konfiguration erstellen
+grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+## Root-Passwort und benutzer
+```
+# Root-Passwort setzen
+passwd
+
+# Neuen Benutzer erstellen
+useradd -m -G wheel -s /bin/bash BENUTZERNAME
+passwd BENUTZUERNAME
+
+# Sudo-Rechte aktivieren
+EDITOR=vim visudo
+# auskommentieren: %wheel ALL=(ALL:ALL) ALL
+```
+
+## NetworkManager aktivieren
+`systemctl enable NetworkManager`
+
+## System neu starten
+```
+exit  # chroot verlassen
+umount -R /mnt
+reboot
+```
+
+
+
+
 
 ## Installieren und Einrichten
 ### Arch Linux installieren
