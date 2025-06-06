@@ -34,6 +34,16 @@ w # Änderungen schreiben
 y # bestätigen
 ```
 
+## Partitionen mounten
+```
+# Root mounten
+mount /dev/sda3 /mnt
+
+# EFI-Verzeichnis erstellen und mounten
+mkdir /mnt/boot
+mount /dev/sda1 /mnt/boot
+```
+
 ## Dateisystem erstellen
 - EFI-Partition formatieren: `mkfs.fat F32 /dev/sda1`
 - Swap einrichten und aktivieren:
