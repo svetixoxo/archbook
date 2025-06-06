@@ -118,9 +118,7 @@ umount -R /mnt
 reboot
 ```
 
-
-
-# Hyprland-Setup
+## Hyprland-Setup
 `su - chanelxoxo`
 - Updates installieren: `sudo pacmam -Syu`
 - AUR Helper installieren (yay)
@@ -134,6 +132,17 @@ makepkg -si
 - Hyprland, Wayland und Wofi installieren: `sudo pacman -S hyprland waybar wofi xdg-desktop-portal-hyprland polkit-kde-agent qt5-wayland qt6-wayland` (pipewire-jack für wayland)
 - Weitere Pakete installieren: `sudo pacman -S kitty firefox thunar grim slurp wl-clipboard pipewire pipewire-pulse wireplumber`
 
+## Login-Manager installieren
+```
+# SDDM installieren
+sudo pacman -S sddm qt5-graphicaleffects qt5-quickcontrols2 qt5-svg
+
+# SDDM aktivieren
+sudo systemctl enable sddm
+
+# System neustarten
+sudo reboot
+```
 
 
 
