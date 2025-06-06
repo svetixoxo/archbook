@@ -211,8 +211,20 @@ sudo pacman -S glxinfo
 glxinfo | grep "OpenGL renderer" # NVE7 ist NVIDIA-GPU
 ```
 
+-hyprland.conf bearbeiten
+```
+sudo vim .config/hypr/hyprland.conf
 
+# Einstellungen:
+env = LIBVA_DRIVER_NAME,nouveau
+env = WLR_NO_HARDWARE_CURSORS,1
+env = WLR_RENDERER_ALLOW_SOFTWARE,1
 
+misc {
+    vfr = true
+    vrr = 0
+}
+```
 
 
 
