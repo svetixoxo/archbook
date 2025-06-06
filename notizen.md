@@ -149,6 +149,27 @@ sudo reboot
 
 (5 Stunden)
 
+## Waybar -> Schriftarten
+```
+# Font Awesome installieren
+sudo pacman -S ttf-font-awesome
+
+# Zusätzlich Icon-Fonts für Waybar
+sudo pacman -S ttf-jetbrains-mono-nerd otf-font-awesome
+
+# Font-Cache aktualisieren
+fc-cache -fv
+
+# Waybar beenden
+pkill waybar
+
+# Waybar neu starten
+waybar &
+```
+
+
+
+
 ---------
 ---------
 ---------
