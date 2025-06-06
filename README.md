@@ -1,6 +1,4 @@
 # ArchBook
-- **VM:** 2025-06-01
-- **Bare Metal**: seit 2025-06-02
 
 ## Software
 - **Treiber**
