@@ -1,7 +1,38 @@
 # Erste Schritte
 - `loadkeys de` bzw. `loadkeys de-latin1` (`-` liegt auf `ß`)
-- Festplatten anzeigen: `lsblk` oder `fdisk -l`
 
+## Festplatte einrichten
+- Festplatten anzeigen: `lsblk` oder `fdisk -l`
+- Festplatten formatieren und partitionieren:
+```
+gdisk /dev/sda # partitionieren
+o # GPT-Partitionstabelle erstellen
+y # bestätigen
+
+# EFI-Partition
+n # neue Partition erstellen
+1 # Partitionsnummer
+[Enter] # erster Sektor
++512M # letzter Sektor (Größe)
+ef00 # EFI System Partition
+
+# Swap-Partition
+n
+2
+[Enter]
++8G
+8200 # Linux swap
+
+# Root-Partition
+n
+3
+[Enter]
+[Enter] # Rest der Festplatte
+8300 # Linux filesystem
+
+w # Änderungen schreiben
+y # bestätigen
+```
 
 ## Installieren und Einrichten
 ### Arch Linux installieren
@@ -31,6 +62,7 @@ station wlan0 scan
 station wlan0 get-networks
 station wlan0 connect "SSID"
 exit
+ping archlinux.de
 ```
 
 
