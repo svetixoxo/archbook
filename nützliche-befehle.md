@@ -1,4 +1,4 @@
-- Text in Zwischenablage: `wl-copy < datei`
+- Text in Zwischenablage: `cat PFAD/DATEI | wl-copy`
 
 ## Pacman
 - System aktualisieren: `pacman -Syu`
