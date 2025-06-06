@@ -267,3 +267,6 @@ suchen und "#" entfernen: # %wheel ALL=(ALL:ALL) ALL
 - weitere Kurzbefehle: https://readline.kablamo.org/emacs.html
 - Hyprland-Wiki: https://wiki.hyprland.org/Useful-Utilities/
 - Packages: https://archlinux.org/packages/?sort=&q=&maintainer=&flagged=
+
+## Probleme
+- Discord über Firefox hat 100% CPU auf 1 Kern und 16 GB RAM; Discord über App hat Multi Core un 2 GB RAM
