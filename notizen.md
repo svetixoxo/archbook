@@ -144,7 +144,10 @@ sudo systemctl enable sddm
 sudo reboot
 ```
 
-(4 Stunden)
+## Hyprland.conf
+## Bildschirmhelligkeit
+
+(5 Stunden)
 
 
 ## Installieren und Einrichten
