@@ -34,6 +34,16 @@ w # Änderungen schreiben
 y # bestätigen
 ```
 
+## Dateisystem erstellen
+- EFI-Partition formatieren: `mkfs.fat F32 /dev/sda1`
+- Swap einrichten und aktivieren:
+```
+mkswap /dev/sda2
+swapon /dev/sda2
+```
+- Root-Partition formatieren: `mkfs.ext4 /dev/sda3`
+
+
 ## Installieren und Einrichten
 ### Arch Linux installieren
 1. Merlin nochmal nach den ersten Schritten fragen (Vorkonfiguration)
