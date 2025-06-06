@@ -1,3 +1,8 @@
+# Erste Schritte
+- `loadkeys de` bzw. `loadkeys de-latin1` (`-` liegt auf `ß`)
+- Festplatten anzeigen: `lsblk` oder `fdisk -l`
+
+
 ## Installieren und Einrichten
 ### Arch Linux installieren
 1. Merlin nochmal nach den ersten Schritten fragen (Vorkonfiguration)
@@ -19,6 +24,15 @@ modprobe brcmfmac
 ```
 - `nmcli device wifi list`
 - `nmcli device wifi connect "SSID" --ask` bzw. `nmcli device wifi connect "SSID" bssid B:S:S:I:D --ask`
+
+```
+iwctl
+station wlan0 scan
+station wlan0 get-networks
+station wlan0 connect "SSID"
+exit
+```
+
 
 ### GRUB einrichten
 - `pacman -S grub efibootmgr`
