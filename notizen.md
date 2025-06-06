@@ -43,8 +43,6 @@ swapon /dev/sda2
 ```
 - Root-Partition formatieren: `mkfs.ext4 /dev/sda3`
 
-
-
 ## Partitionen mounten
 ```
 # Root mounten
@@ -54,6 +52,9 @@ mount /dev/sda3 /mnt
 mkdir /mnt/boot
 mount /dev/sda1 /mnt/boot
 ```
+
+## Basis-Pakete installieren
+```pacstrap /mnt base base-devel linux linux-firmware vim nano networkmanager grub efibootmgr```
 
 ## Installieren und Einrichten
 ### Arch Linux installieren
