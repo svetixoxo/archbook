@@ -144,6 +144,7 @@ sudo systemctl enable sddm
 sudo reboot
 ```
 
+(4 Stunden)
 
 
 ## Installieren und Einrichten
