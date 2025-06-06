@@ -149,7 +149,9 @@ sudo reboot
 
 (5 Stunden)
 
-
+---------
+---------
+---------
 ## Installieren und Einrichten
 ### Arch Linux installieren
 1. Merlin nochmal nach den ersten Schritten fragen (Vorkonfiguration)
