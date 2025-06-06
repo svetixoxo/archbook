@@ -160,11 +160,9 @@ sudo pacman -S ttf-jetbrains-mono-nerd otf-font-awesome
 # Font-Cache aktualisieren
 fc-cache -fv
 
-# Waybar beenden
+# Waybar und Hyprland beenden
 pkill waybar
-
-# Waybar neu starten
-waybar &
+pkill Hyprland
 ```
 
 
