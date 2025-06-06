@@ -203,6 +203,14 @@ sudo vim /etc/modules-load.d/macbook.conf
 applesmc
 coretemp
 ```
+- Nach Neustart prüfen
+```
+lsmod | grep nouveau
+lspci -k | grep -A 2 -E "(VGA|3D)" # Kernel driver in use: nouveau
+sudo pacman -S glxinfo
+glxinfo | grep "OpenGL renderer" # NVE7 ist NVIDIA-GPU
+```
+
 
 
 
