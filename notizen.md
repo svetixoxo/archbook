@@ -185,6 +185,27 @@ sudo vim /etc/sddm.conf
 # Current=sddm_wynn-theme
 ```
 
+## Nouveau-Treiber für Grafikkarte installieren
+- Pakete instllieren: `sudo pacman -S mesa xf86-video-nouveau`
+- Kernel-Module zur Initramfs hinzufügen
+```
+sudo vim /etc/mkinitcpio.conf
+# MODULES=(nouveau)
+
+# Initramfs neu erstellen
+sudo mkinitcpio -P
+```
+- Apple-spezifische Module laden
+```
+sudo vim /etc/modules-load.d/macbook.conf
+
+# Inhalt
+applesmc
+coretemp
+```
+
+
+
 
 
 
