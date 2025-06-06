@@ -229,6 +229,7 @@ misc {
 
 ## OpenSSH und FUSE-T einrichten
 
+## Sichtbarkeit vom Mauszeiger anpassen
 
 ---------
 ---------
