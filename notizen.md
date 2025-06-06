@@ -171,6 +171,19 @@ sudo su
 echo 255 > /sys/class/leds/smc::kbd_backlight/brightness
 ```
 
+## Login-Manager konfigurieren
+```
+sudo git clone https://github.com/m-wynn/sddm_wynn-theme.git /usr/share/sddm/themes/sddm_wynn-theme
+sudo chmod -R 755 /usr/share/sddm/themes/sddm_wynn-theme
+
+sudo -i
+sddm --example-config > /etc/sddm.conf
+exit
+
+sudo vim /etc/sddm.conf
+# [Theme]
+# Current=sddm_wynn-theme
+```
 
 
 
