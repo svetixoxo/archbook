@@ -231,6 +231,13 @@ misc {
 
 ## Sichtbarkeit vom Mauszeiger anpassen
 
+## Ruhezustand einrichten
+- Datei bearbeiten: `/etc/default/grub`
+- Kernel-Parameter `GRUB_CMDLINE_LINUX_DEFAULT` ergänzen: `resume=LABEL=swap`
+- grub.cfg neu erstellen: `grub-mkconfig -o /boot/grub/grub.cfg`
+- `sudo vim /etc/mkinitcpio.conf` im Abschnitt `HOOKS` ergänzen: `resume`
+- Initramfs-Image neu erstellen: `mkinitcpio -p linux`
+
 ---------
 ---------
 ---------
