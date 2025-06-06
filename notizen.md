@@ -34,16 +34,6 @@ w # Änderungen schreiben
 y # bestätigen
 ```
 
-## Partitionen mounten
-```
-# Root mounten
-mount /dev/sda3 /mnt
-
-# EFI-Verzeichnis erstellen und mounten
-mkdir /mnt/boot
-mount /dev/sda1 /mnt/boot
-```
-
 ## Dateisystem erstellen
 - EFI-Partition formatieren: `mkfs.fat F32 /dev/sda1`
 - Swap einrichten und aktivieren:
@@ -53,6 +43,17 @@ swapon /dev/sda2
 ```
 - Root-Partition formatieren: `mkfs.ext4 /dev/sda3`
 
+
+
+## Partitionen mounten
+```
+# Root mounten
+mount /dev/sda3 /mnt
+
+# EFI-Verzeichnis erstellen und mounten
+mkdir /mnt/boot
+mount /dev/sda1 /mnt/boot
+```
 
 ## Installieren und Einrichten
 ### Arch Linux installieren
