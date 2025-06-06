@@ -165,6 +165,13 @@ pkill waybar
 pkill Hyprland
 ```
 
+## Tastaturbeleuchtung
+```
+sudo su
+echo 255 > /sys/class/leds/smc::kbd_backlight/brightness
+```
+
+
 
 
 
