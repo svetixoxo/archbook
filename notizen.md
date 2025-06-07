@@ -61,7 +61,10 @@
     - [16.3 Workspace-Navigation](#163-workspace-navigation)
 17. [Hilfreiche Links](#17-hilfreiche-links)
 18. [Bekannte Probleme](#18-bekannte-probleme)
-    - [18.1 Discord Performance](#181-discord-performance)
+    - [18.1 Discord-Performance](#181-discord-performance)
+    - [18.2 Bildschirmhelligkeit (MacBook)](#182-bildschirmhelligkeit-macbook)
+    - [18.3 WLAN-Treiber lädt nicht automatisch](#183-wlan-treiber-lädt-nicht-automatisch)
+    - [18.4 HiDPI-Skalierung inkonsistent](#184-hidpi-skalierung-inkonsistent)
 
 ---
 
@@ -497,6 +500,21 @@ ALT + 1, ALT + 2, etc.  # Zwischen Workspaces wechseln
 
 ## 18. Bekannte Probleme
 
-### 18.1 Discord Performance
+### 18.1 Discord-Performance
 - **Problem**: Discord über Firefox verbraucht 100% CPU auf einem Kern und 16 GB RAM
 - **Lösung**: Discord-App verwenden (Multi-Core-Unterstützung, nur 2 GB RAM-Verbrauch)
+
+### 18.2 Bildschirmhelligkeit (MacBook)
+- **Problem**: Helligkeitsregelung funktioniert nicht standardmäßig
+- **Workaround**: Systemd-Service für gmux_backlight und brightnessctl
+- **Aktueller Status**: Funktioniert nicht vollständig - manueller Root-Befehl erforderlich: `setpci -v -H1 -s 00:01.00 BRIDGE_CONTROL=0`
+
+### 18.3 WLAN-Treiber lädt nicht automatisch
+- **Problem**: Broadcom WLAN-Treiber (brcmfmac) muss bei jedem Start manuell geladen werden
+- **Lösung**: Systemd-Service erstellt, der Module vor NetworkManager lädt
+- **Status**: Gelöst durch broadcom.service
+
+### 18.4 HiDPI-Skalierung inkonsistent
+- **Problem**: Discord, QT- und GDK-Apps haben falsche Skalierung auf HiDPI-Displays
+- **Aktueller Workaround**: Individuelle .desktop-Dateien mit Scale-Faktoren anpassen
+- **Status**: Unvollständig gelöst - robustere systemweite Lösung benötigt
