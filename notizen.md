@@ -68,10 +68,10 @@
 ## 1. Erste Schritte
 
 ### 1.1 Vorbereitungen
-- Zeit einplanen: Die komplette Installation dauert 5-7 Stunden
-- Geduld mitbringen: Arch Linux erfordert manuelle Konfiguration
-- Backup erstellen: Alle wichtigen Daten vorher sichern
-- USB-Stick vorbereiten: Mit WLAN-Treibern und Image für Arch Linux
+- **Zeit einplanen:** Die komplette Installation dauert 5-7 Stunden
+- **Geduld mitbringen:** Arch Linux erfordert manuelle Konfiguration
+- **Backup erstellen:** Alle wichtigen Daten vorher sichern
+- **USB-Stick vorbereiten:** Mit WLAN-Treibern und Image für Arch Linux
 
 ### 1.2 Tastaturlayout laden
 ```bash
