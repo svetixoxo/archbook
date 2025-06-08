@@ -25,3 +25,5 @@
 - Aktive Zeile löschen: `dd`
 - Suchen: `/` (nächster Treffer mit `N`)
 - Alles markieren: `ggVG`
+- Zeichen kopieren: `vly` (`v` = Visueller Modus, `l` = Zeichen auswählen, `y` = kopieren)
+- Zeichen einfügen: `p`
