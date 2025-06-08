@@ -18,15 +18,15 @@
 .config/fastfetch/config.jsonc
 
 ## Logo ändern
-## Eigene Logos
+# Eigene Logos
 fast.config/fastfetch/logo/
 
-## Wallbash-Icons
+# Wallbash-Icons
 .local/share/icons/Wallbash-Icon/fastfetch/
 
-## Theme-spezifische Logos
+# Theme-spezifische Logos
 .config/hyde/themes/${HYDE_THEME}/logo/
 
-## Aktuelles Hintergrundbild
-`$HYDE_CACHE_HOME/wall.quad
+# Aktuelles Hintergrundbild
+$HYDE_CACHE_HOME/wall.quad
 ```
