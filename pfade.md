@@ -11,7 +11,7 @@
 
 ### HyDe
 ```bash
-.config/hyde/themes            # Themes
+.config/hyde/themes
 .config/hyde/themes/${HYDE_THEME}/hypr.theme
 ```
 
