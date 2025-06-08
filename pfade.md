@@ -1,13 +1,21 @@
-.zprofile
-.zshrc
+### Hyprland
+```bash
+## Hyprland-Config
+.config/hypr/hyprland.config  # ohne HyDE
+.config/hypr/userprefs.conf  # mit HyDE
+.config/hypr/hyprland.conf  # HyDE-Root
 
+.config/hypr/hypridle.conf  # Ruhezustand etc.
+.config/hypr/keybindings.conf  # Keybindings
+```
+
+### Kitty
+```bash
+.zshrc
 .config/kitty/current-theme.conf
 .config/kitty/kitty.conf
-
-.config/hypr/hypridle.conf
-.config/hypr/userprefs.conf
-.config/hypr/hyprland.conf
-.config/hypr/keybindings.conf
+.config/kitty/hyde.conf
+```
 
 ### fastfetch
 ```bash
