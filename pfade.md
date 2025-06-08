@@ -9,12 +9,29 @@
 .config/hypr/keybindings.conf  # Keybindings
 ```
 
+### HyDe
+```bash
+.config/hyde/themes            # Themes
+.config/hyde/themes/${HYDE_THEME}/hypr.theme
+```
+
 ### Kitty
 ```bash
 .zshrc
 .config/kitty/current-theme.conf
 .config/kitty/kitty.conf
 .config/kitty/hyde.conf
+.config/hyde/themes/${HYDE_THEME}/kitty.theme
+```
+
+### Waybar
+```bash
+.config/hyde/themes/${HYDE_THEME}/waybar.theme
+```
+
+### Rofi
+```bash
+.config/hyde/themes/${HYDE_THEME}/rofi.theme
 ```
 
 ### fastfetch
