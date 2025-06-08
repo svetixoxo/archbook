@@ -1,11 +1,11 @@
 ### Hyprland
 ```bash
 ## Hyprland-Config
-.config/hypr/hyprland.config  # ohne HyDE
-.config/hypr/userprefs.conf  # mit HyDE
-.config/hypr/hyprland.conf  # HyDE-Root
+.config/hypr/hyprland.config   # ohne HyDE
+.config/hypr/userprefs.conf    # mit HyDE
+.config/hypr/hyprland.conf     # HyDE-Root
 
-.config/hypr/hypridle.conf  # Ruhezustand etc.
+.config/hypr/hypridle.conf     # Ruhezustand etc.
 .config/hypr/keybindings.conf  # Keybindings
 ```
 
