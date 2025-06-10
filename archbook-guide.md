@@ -79,6 +79,7 @@ mount /dev/sda1 /mnt/boot   # nvme0n1p1
 ```
 
 ## 3. System-Installation
+- Falls nicht per Kabel angeschlossen, WLAN verbinden (siehe 9.)
 
 ### 3.1 Basis-Pakete installieren
 ```bash
