@@ -26,7 +26,7 @@ fdisk -l
 
 ### 2.2 Festplatte partitionieren
 ```bash
-gdisk /dev/sda
+gdisk /dev/sda       # oder nvme0n1
 o                    # GPT-Partitionstabelle erstellen
 y                    # bestätigen
 
