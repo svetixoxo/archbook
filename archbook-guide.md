@@ -58,7 +58,7 @@ y                    # bestätigen
 ### 2.3 Dateisysteme erstellen
 ```bash
 # EFI-Partition formatieren
-mkfs.fat -F32 /dev/sda1
+mkfs.fat -F32 /dev/sda1 # oder entsprechende nvme0n1; mit lsblk schauen!
 
 # Swap einrichten und aktivieren
 mkswap /dev/sda2
