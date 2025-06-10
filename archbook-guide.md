@@ -287,6 +287,7 @@ sudo chmod -R 755 /usr/share/sddm/themes/sddm_wynn-theme
 
 # Konfiguration erstellen
 sudo sddm --example-config > /etc/sddm.conf
+# oder: sudo sddm --example-config | sudo tee /etc/sddm.conf > /dev/null
 
 # Theme aktivieren
 sudo vim /etc/sddm.conf
