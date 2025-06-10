@@ -243,6 +243,10 @@ sudo pacman -Syu
 ```bash
 sudo pacman -S --needed base-devel git
 
+# falls Schlüsselbund-Fehler:
+# sudo pacman-key --init
+# sudo pacman-key --populate archlinux
+
 cd ~
 git clone https://aur.archlinux.org/yay.git
 cd yay
