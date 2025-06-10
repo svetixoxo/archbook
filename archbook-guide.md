@@ -58,24 +58,24 @@ y                    # bestätigen
 ### 2.3 Dateisysteme erstellen
 ```bash
 # EFI-Partition formatieren
-mkfs.fat -F32 /dev/sda1 # oder entsprechende nvme0n1; mit lsblk schauen!
+mkfs.fat -F32 /dev/sda1 # oder entsprechende nvme0n1p1; mit lsblk schauen!
 
 # Swap einrichten und aktivieren
-mkswap /dev/sda2
-swapon /dev/sda2
+mkswap /dev/sda2     # nvme0n1p2
+swapon /dev/sda2     # nvme0n1p2
 
 # Root-Partition formatieren
-mkfs.ext4 /dev/sda3
+mkfs.ext4 /dev/sda3  # nvme0n1p3
 ```
 
 ### 2.4 Partitionen mounten
 ```bash
 # Root mounten
-mount /dev/sda3 /mnt
+mount /dev/sda3 /mnt # nvme0n1p3
 
 # EFI-Verzeichnis erstellen und mounten
 mkdir /mnt/boot
-mount /dev/sda1 /mnt/boot
+mount /dev/sda1 /mnt/boot   # nvme0n1p1
 ```
 
 ## 3. System-Installation
