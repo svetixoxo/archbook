@@ -144,7 +144,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 ### 5.3 GRUB für WLAN-Treiber konfigurieren (falls benötigt)
 ```bash
-nano /etc/default/grub
+vim /etc/default/grub
 # Folgende Zeile anpassen:
 # GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet brcmfmac.feature_disable=0x82000"
 
