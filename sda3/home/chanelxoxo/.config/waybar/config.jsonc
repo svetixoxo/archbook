@@ -70,6 +70,7 @@
         "modules": [
 //            "idle_inhibitor",
             "custom/updates",
+            "custom/cpuinfo",
             "battery"
         ]
     }
