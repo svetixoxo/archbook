@@ -18,6 +18,13 @@
 ## Hyprpaper
 - Hintergrundbild neu laden: `hyprctl hyprpaper reload eDP-1,/home/chanelxoxo/Bilder/bg/apothekerin_3.jpg`
 
+## Kitty
+- [Theme](https://github.com/dexpota/kitty-themes?tab=readme-ov-file#previews) ändern:
+```
+cd ~/.config/kitty
+ln -s ./kitty-themes/themes/THEMENAME.conf ~/.config/kitty/theme.conf
+```
+
 ## VIM
 - Speichern und beenden: `:wq`
 - Beenden: `:q` oder `q!`
