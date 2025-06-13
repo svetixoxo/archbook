@@ -22,7 +22,7 @@
 - [Theme](https://github.com/dexpota/kitty-themes?tab=readme-ov-file#previews) ändern:
 ```
 cd ~/.config/kitty
-ln -s ./kitty-themes/themes/THEMENAME.conf ~/.config/kitty/theme.conf
+ln -s ./kitty-themes/themes/THEMENAME.conf ~/.config/kitty/theme.conf --force
 ```
 
 ## VIM
